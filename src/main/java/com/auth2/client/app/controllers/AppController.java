@@ -27,8 +27,9 @@ public class AppController {
 		return entity;
 	}
 
+	@GetMapping("/authorized")
 	public Map<String, String> authorized(@RequestParam String code) {
-		return Collections.singletonMap("code", "code");
+		return Collections.singletonMap("code", code);
 	}
 
 }
